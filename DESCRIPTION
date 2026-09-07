@@ -1,0 +1,20 @@
+Package: TEnGExA
+Type: Package
+Title: Tissue-Enrichment Analysis of any Number of Genes and Tissues
+Version: 1.0
+Date: 2020-06-06
+Authors@R: c(
+    person("Hukam", "Rawal", comment = c(ORCID = "0000-0002-2727-9721"), email = "hukam.rawal@gmail.com", role = c("aut")),
+    person("UB", "Angadi",  email = "angadiub@gmail.com", role = c("aut", "cre")),
+    person("Tapan", "Kumar", "Mondal", role = c("aut"))
+  )
+Maintainer: Hukam Rawal <hukam.rawal@gmail.com>
+Contact: Angadi UB<angadiub@gmail.com>
+Description: Tissue-enrichment analysis of any large number of genes with any number of tissues, irrespective of any organism provided only the read count matrix.
+License: GPL-3 + file LICENSE
+usethis: use_package("stats", "utils", "usethis")
+Imports: utils, data.table
+NeedsCompilation: no
+Packaged: 2020-09-23 09:46:44 UTC; angadiub
+Config/roxygen2/version: 8.1.0
+Encoding: UTF-8
