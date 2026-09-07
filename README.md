@@ -2,7 +2,6 @@
 
 ## Tissue Enrichment analysis of any number of genes with any number of tissues, irrespective of any organism provided only the read count matrix or FPKM value matrix.
 
-The DESCRIPTION file: .
 While working on transcripts such as CDS, alternative splicing, circular RNAs or lncRNAs, one can annotate them to assign some biological process or functions to relate with some specific pathway or network analysis. But while dealing with data from multiple tissues it is always preferable to proceed with some tissue-specific or tissue-enriched transcripts only. Recently tools have been developed for tissue-enrichment analysis but not only needs technical advancement to work with but more importantly limited to specific organism or predetermined list of genes or transcripts. This R package (TEnGExA) has been developed to perform tissue-enrichment analysis of any number of genes with any number of tissues, irrespective of any organism provided only the read count matrix or FPKM value matrix. 
 
 ## Required software and packages:
@@ -57,9 +56,11 @@ Original code written by : Angadi U B Angadi UB <angadiub@gmail.com>
 
 Updated and debugged by: Hukam C. Rawal
 
-Citation:
+
+### Citation:
 
 Rawal, H.C., Angadi, U., Mondal, T.K. (2021). TEnGExA: an R package based tool for tissue enrichment and gene expression analysis. Briefings in Bioinformatics, 22(3):bbaa221. https://doi.org/10.1093/bib/bbaa221
+
 
 ### KEYWORDS
 
