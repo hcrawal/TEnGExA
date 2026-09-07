@@ -1,21 +1,21 @@
 # TEnGExA-package {TEnGExA}	R Documentation
 
-# Tissue Enrichment analysis of any number of genes with any number of tissues, irrespective of any organism provided only the read count matrix or FPKM value matrix.
+## Tissue Enrichment analysis of any number of genes with any number of tissues, irrespective of any organism provided only the read count matrix or FPKM value matrix.
 
 The DESCRIPTION file: .
 While working on transcripts such as CDS, alternative splicing, circular RNAs or lncRNAs, one can annotate them to assign some biological process or functions to relate with some specific pathway or network analysis. But while dealing with data from multiple tissues it is always preferable to proceed with some tissue-specific or tissue-enriched transcripts only. Recently tools have been developed for tissue-enrichment analysis but not only needs technical advancement to work with but more importantly limited to specific organism or predetermined list of genes or transcripts. This R package (TEnGExA) has been developed to perform tissue-enrichment analysis of any number of genes with any number of tissues, irrespective of any organism provided only the read count matrix or FPKM value matrix. 
 
-# Required software and packages:
+## Required software and packages:
 
  R (http://www.r-project.org/)
 
 
-# Command
+## Command
 
 result=TEnGExA(x, fpkm_flag=0, threshold=5, tissue_num=5, min_fpkm= 1)
 
 
-# Parameters
+## Parameters
 
 #### Count matrix or FPKM matrix #### 
 
@@ -49,7 +49,7 @@ The output results are in matrix form with details in last column; Default-outpu
 
 ################
 
-# Author(s)
+### Author(s)
 
 Hukam C Rawal, Angadi U B, T. K. Mondal.
 
@@ -61,21 +61,26 @@ Citation:
 
 Rawal, H.C., Angadi, U., Mondal, T.K. (2021). TEnGExA: an R package based tool for tissue enrichment and gene expression analysis. Briefings in Bioinformatics, 22(3):bbaa221. https://doi.org/10.1093/bib/bbaa221
 
-# KEYWORDS
+### KEYWORDS
 
 Tissue Enriched, Tissue Enhanced, Gene, Tissue, read count, FPKM
 
 
-# Examples
+## How to run:
 
 ### Install package (one time only)
 install.packages('./TEnGExA', repos = NULL, type="source")
+
 ### Call library
 library('TEnGExA')
+
 ### Run with sample file
 datafile= paste(path.package("TEnGExA"),"/exdata/sample-fpkm-matrix-1.csv",sep="")
+
 data1 = read.csv(datafile, header = TRUE)
+
 result=TEnGExA(data1, fpkm_flag=1, threshold=5, tissue_num= 4, min_fpkm= 1)
+
 write.csv(result, "output1.csv")
 
 
