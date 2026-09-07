@@ -68,14 +68,28 @@ Tissue Enriched, Tissue Enhanced, Gene, Tissue, read count, FPKM
 
 ## How to run:
 
-### Install package (one time only)
-install.packages('./TEnGExA', repos = NULL, type="source")
+### Install package:
+ 
+ ### Directly from github
+
+remotes::install_github("hcrawal/TEnGExA")
+
+ ### Using source code
+ 
+ 1. Download TEnGExA_*.tar.gz file
+ 
+ 2. Open Rstudio or R and type as below:
+ 
+ install.packages("~/TEnGExA_*.tar.gz", repos = NULL, type = "source")
 
 ### Call library
+
 library('TEnGExA')
 
 ### Run with sample file
 datafile= paste(path.package("TEnGExA"),"/exdata/sample-fpkm-matrix-1.csv",sep="")
+
+{or if specifying your input file path:   datafile= paste("file_path/matrix_file_name",sep="") }
 
 data1 = read.csv(datafile, header = TRUE)
 
